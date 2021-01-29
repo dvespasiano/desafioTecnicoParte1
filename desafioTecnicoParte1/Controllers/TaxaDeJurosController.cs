@@ -4,8 +4,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-
 namespace desafioTecnicoParte1.Controllers
 {
     [Route("api/[controller]")]
@@ -13,7 +11,7 @@ namespace desafioTecnicoParte1.Controllers
     public class TaxaDeJurosController : ControllerBase
     {
         [HttpGet]
-        [Route("taxaJuros")]
+        [Route("/taxaJuros")]
         public double GetTaxaDeJuros()
         {
             return 0.01;
